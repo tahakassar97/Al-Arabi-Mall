@@ -1,0 +1,56 @@
+com/tahakassar/ecommerce/CustomDialog.java
+ com.tahakassar.ecommerce.CustomDialog
+com/tahakassar/ecommerce/MainActivity.java
+ com.tahakassar.ecommerce.MainActivity
+com/tahakassar/ecommerce/models/User.java
+ com.tahakassar.ecommerce.models.User
+com/tahakassar/ecommerce/BrandDetailsActivity.java
+ com.tahakassar.ecommerce.BrandDetailsActivity
+ com.tahakassar.ecommerce.BrandDetailsActivity$1
+com/tahakassar/ecommerce/models/Category.java
+ com.tahakassar.ecommerce.models.Category
+com/tahakassar/ecommerce/AboutUsFragment.java
+ com.tahakassar.ecommerce.AboutUsFragment
+com/tahakassar/ecommerce/controllers/RatingController.java
+ com.tahakassar.ecommerce.controllers.RatingController
+com/tahakassar/ecommerce/LoadingDialog.java
+ com.tahakassar.ecommerce.LoadingDialog
+com/tahakassar/ecommerce/adapters/ViewPagerAdapter.java
+ com.tahakassar.ecommerce.adapters.ViewPagerAdapter
+com/tahakassar/ecommerce/controllers/UpdateProfileController.java
+ com.tahakassar.ecommerce.controllers.UpdateProfileController
+com/tahakassar/ecommerce/models/Brand.java
+ com.tahakassar.ecommerce.models.Brand
+com/tahakassar/ecommerce/SplashScreenActivity.java
+ com.tahakassar.ecommerce.SplashScreenActivity
+com/tahakassar/ecommerce/HomeFragment.java
+ com.tahakassar.ecommerce.HomeFragment
+ com.tahakassar.ecommerce.HomeFragment$1
+ com.tahakassar.ecommerce.HomeFragment$1$1
+ com.tahakassar.ecommerce.HomeFragment$2
+ com.tahakassar.ecommerce.HomeFragment$2$1
+com/tahakassar/ecommerce/BasicData.java
+ com.tahakassar.ecommerce.BasicData
+com/tahakassar/ecommerce/BuildConfig.java
+ com.tahakassar.ecommerce.BuildConfig
+com/tahakassar/ecommerce/APIInterface.java
+ com.tahakassar.ecommerce.APIInterface
+com/tahakassar/ecommerce/controllers/RegisterController.java
+ com.tahakassar.ecommerce.controllers.RegisterController
+com/tahakassar/ecommerce/controllers/AboutUsController.java
+ com.tahakassar.ecommerce.controllers.AboutUsController
+com/tahakassar/ecommerce/MapsActivity.java
+ com.tahakassar.ecommerce.MapsActivity
+com/tahakassar/ecommerce/ProfileFragment.java
+ com.tahakassar.ecommerce.ProfileFragment
+com/tahakassar/ecommerce/adapters/BrandAdapter.java
+ com.tahakassar.ecommerce.adapters.BrandAdapter
+ com.tahakassar.ecommerce.adapters.BrandAdapter$ViewHolder
+com/tahakassar/ecommerce/controllers/LoginController.java
+ com.tahakassar.ecommerce.controllers.LoginController
+com/tahakassar/ecommerce/LoginActivity.java
+ com.tahakassar.ecommerce.LoginActivity
+com/tahakassar/ecommerce/controllers/BrandDetailsController.java
+ com.tahakassar.ecommerce.controllers.BrandDetailsController
+com/tahakassar/ecommerce/RegisterActivity.java
+ com.tahakassar.ecommerce.RegisterActivity

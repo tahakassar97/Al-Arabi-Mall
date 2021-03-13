@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="logo">200dp</dimen>
+    <dimen name="mini_margin">5dp</dimen>
+    <dimen name="main_padding">15dp</dimen>
+    <dimen name="title">25dp</dimen>
+    <dimen name="btn_text">17dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="icon">45dp</dimen>
+    <dimen name="rounded_chip">32dp</dimen>
+    <dimen name="margin_hor">35dp</dimen>
+    <dimen name="margin_hor_btn">120dp</dimen>
+    <dimen name="chip_width">94dp</dimen>
+    <dimen name="design_navigation_separator_vertical_padding" tools:override="true">40dp</dimen>
+</resources>

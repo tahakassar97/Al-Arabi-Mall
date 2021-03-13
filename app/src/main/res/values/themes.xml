@@ -1,0 +1,59 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Ecommerce" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/colorPrimaryDark</item>
+        <!-- Customize your theme here. -->
+        <item name="drawerArrowStyle">@style/DrawerIcon</item>
+        <item name="android:listDivider">@android:color/transparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:actionMenuTextColor">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.popUpOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="DrawerIcon" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">#AE000000</item>
+    </style>
+
+    <style name="CustomChipStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/chip_background_color</item>
+        <item name="android:textColor">@color/chip_font_color</item>
+        <item name="checkedIconTint">@color/colorPrimaryDark</item>
+        <item name="chipCornerRadius">@dimen/mini_margin</item>
+    </style>
+
+
+    <style name="CustomChipStyle2" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/chip_background_color</item>
+        <item name="android:textColor">@color/chip_font_color</item>
+        <item name="checkedIconTint">@color/colorPrimaryDark</item>
+        <item name="chipCornerRadius">30dp</item>
+    </style>
+
+    <style name="secondAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+
+</resources>

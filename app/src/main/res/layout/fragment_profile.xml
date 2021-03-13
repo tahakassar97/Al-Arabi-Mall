@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity"
+    android:background="@color/light_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/profile"
+                tools:ignore="ContentDescription,PxUsage" />
+
+            <EditText
+                android:id="@+id/nameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_hor"
+                android:layout_marginVertical="@dimen/mini_margin"
+                android:autofillHints=""
+                android:background="@drawable/edit_back"
+                android:drawableStart="@drawable/rsz_account"
+                android:drawablePadding="10dp"
+                android:hint="@string/full_name"
+                android:inputType="textPersonName"
+                android:padding="@dimen/main_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+
+            <EditText
+                android:id="@+id/usernameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_hor"
+                android:editable="false"
+                android:focusable="false"
+                android:autofillHints=""
+                android:background="@drawable/edit_back"
+                android:drawableStart="@drawable/rsz_account"
+                android:drawablePadding="10dp"
+                android:hint="@string/username"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/main_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                tools:ignore="TextFields" />
+
+            <EditText
+                android:id="@+id/passwordET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_hor"
+                android:layout_marginVertical="@dimen/mini_margin"
+                android:autofillHints=""
+                android:background="@drawable/edit_back"
+                android:editable="false"
+                android:focusable="false"
+                android:drawableStart="@drawable/rsz_password"
+                android:drawablePadding="10dp"
+                android:hint="@string/password_"
+                android:inputType="textPassword"
+                android:padding="@dimen/main_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                tools:ignore="TextFields" />
+
+
+            <EditText
+                android:id="@+id/locationET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_hor"
+                android:editable="false"
+                android:focusable="false"
+                android:background="@drawable/edit_back"
+                android:drawableStart="@drawable/rsz_location"
+                android:drawablePadding="10dp"
+                android:hint="@string/location"
+                android:inputType="textPersonName"
+                android:padding="@dimen/main_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:autofillHints="" />
+
+            <Button
+                android:id="@+id/editBTN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_hor_btn"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:background="@drawable/custom_button"
+                android:text="@string/update"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_text"
+                tools:ignore="SpUsage" />
+
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapAddPark"
+                android:layout_width="280dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                tools:context=".MainAdminActivity"
+                tools:ignore="Instantiatable" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="105dp"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:text="@string/register"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/icon"
+                android:textStyle="bold"
+                tools:ignore="PxUsage,SpUsage" />
+
+            <EditText
+                android:id="@+id/nameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:autofillHints=""
+                android:background="@drawable/edit_back"
+                android:drawableStart="@drawable/rsz_account"
+                android:drawablePadding="10dp"
+                android:hint="@string/full_name"
+                android:inputType="textPersonName"
+                android:padding="@dimen/main_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+
+            <EditText
+                android:id="@+id/usernameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="35dp"
+                android:autofillHints=""
+                android:background="@drawable/edit_back"
+                android:drawableStart="@drawable/rsz_account"
+                android:drawablePadding="10dp"
+                android:hint="@string/username"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/main_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                tools:ignore="TextFields" />
+
+            <EditText
+                android:id="@+id/passwordET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginVertical="@dimen/fab_margin"
+                android:autofillHints=""
+                android:background="@drawable/edit_back"
+                android:drawableStart="@drawable/rsz_password"
+                android:drawablePadding="10dp"
+                android:hint="@string/password_"
+                android:inputType="textPassword"
+                android:padding="@dimen/main_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                tools:ignore="TextFields" />
+
+
+            <EditText
+                android:id="@+id/locationET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="35dp"
+                android:autofillHints=""
+                android:editable="false"
+                android:focusable="false"
+                android:background="@drawable/edit_back"
+                android:drawableStart="@drawable/rsz_location"
+                android:drawablePadding="10dp"
+                android:hint="@string/location"
+                android:inputType="textPersonName"
+                android:padding="@dimen/main_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+            <Button
+                android:id="@+id/registerBTN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="130dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_button"
+                android:text="@string/register"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_text"
+                tools:ignore="SpUsage" />
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="280dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/fab_margin"
+                tools:context=".MapsActivity" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

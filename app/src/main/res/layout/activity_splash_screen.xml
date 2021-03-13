@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".SplashScreenActivity">
+
+    <ImageView
+        android:layout_width="@dimen/logo"
+        android:layout_height="@dimen/logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/sfew"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/icon"
+        android:textStyle="bold"
+        tools:ignore="PxUsage,SpUsage" />
+
+
+    <TextView
+        android:id="@+id/welcomeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/welcome"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="PxUsage,SpUsage" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="280dp"
+        android:text="@string/loading_data"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="PxUsage,SpUsage" />
+
+    <com.marcok.stepprogressbar.StepProgressBar
+        android:id="@+id/stepProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        app:activeDotColor="@color/colorAccent"
+        app:activeDotIndex="0"
+        app:cumulativeDots="true"
+        app:dotSize="15dp"
+        app:inactiveDotColor="@color/gray"
+        app:numberDots="5"
+        app:spacing="5dp"
+        tools:ignore="MissingClass" />
+
+</LinearLayout>
