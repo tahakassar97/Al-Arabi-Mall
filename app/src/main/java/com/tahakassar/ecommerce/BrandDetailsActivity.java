@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -108,12 +109,16 @@ public class BrandDetailsActivity extends AppCompatActivity implements OnMapRead
     @SuppressLint("SetTextI18n")
     public static void initData(Context context, Brand brand) {
         currentPosition = 0;
-        stepProgressBar.setNumDots(brand.getPics().size());
-        stepProgressBar.setCurrentProgressDot(0);
+        try {
+            stepProgressBar.setNumDots(brand.getPics().size());
+            stepProgressBar.setCurrentProgressDot(0);
+        } catch (Exception e) {
+            Log.e("Exception e", e.getMessage());
+        }
         title.setText(brand.getTitle());
         ratingBar.setRating(brand.getRating());
         description.setText(brand.getDescription());
-        address.setText("Al-Arabi Mall");
+        address.setText(brand.getLocation());
         phone.setText(brand.getPhone());
         Picasso.get().load(brand.getIcon()).into(logo);
         urls.addAll(brand.getPics());

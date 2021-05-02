@@ -2,6 +2,7 @@ package com.tahakassar.ecommerce.controllers;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
@@ -51,7 +52,6 @@ public class RatingController implements Callback<JsonObject> {
         dialog.setCancelable(false);
         dialog.show();
         APIInterface apiInterface = retrofit.create(APIInterface.class);
-
         Call<JsonObject> call = apiInterface.setRate(service, brandID, userID, rating);
         call.enqueue(this);
     }

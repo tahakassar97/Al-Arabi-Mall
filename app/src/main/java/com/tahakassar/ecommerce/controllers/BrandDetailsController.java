@@ -36,7 +36,6 @@ public class BrandDetailsController implements Callback<JsonObject> {
         this.context = context;
         HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();
         loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
-
         OkHttpClient.Builder httpClient = new OkHttpClient.Builder()
                 .connectTimeout(10, TimeUnit.SECONDS)
                 .readTimeout(20, TimeUnit.SECONDS)
@@ -65,24 +64,30 @@ public class BrandDetailsController implements Callback<JsonObject> {
     public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
         if (response.isSuccessful()) {
             JsonObject result = response.body();
-            Log.e("pics", String.valueOf(result.get("pics")));
             ArrayList<String> urls = new ArrayList<>();
             JsonArray pics = result.get("data").getAsJsonObject().get("pics").getAsJsonArray();
-            Log.e("pics", String.valueOf(pics.size()));
             for (int i = 0; i < pics.size(); i++) {
-                Log.e("pics", pics.get(i).getAsString());
                 urls.add(pics.get(i).getAsString());
             }
+            float rating = 0f;
+            try {
+                if (result.getAsJsonObject("data").get("rating") != null) {
+                    rating = result.getAsJsonObject("data").get("rating").getAsFloat();
+                }
+            } catch (Exception e) {
+                Log.e("ExceptionE", e.getMessage());
+            }
+
             Brand brand = new Brand(result.getAsJsonObject("data").get("id").getAsString(),
                     result.getAsJsonObject("data").get("title").getAsString(),
                     result.getAsJsonObject("data").get("icon").getAsString(),
-                    result.getAsJsonObject("data").get("rating").getAsFloat(), urls,
+                    rating, urls,
                     result.getAsJsonObject("data").get("description").getAsString(),
                     result.getAsJsonObject("data").get("phone").getAsString(),
                     result.getAsJsonObject("data").get("lat").getAsString(),
-                    result.getAsJsonObject("data").get("lng").getAsString());
+                    result.getAsJsonObject("data").get("lng").getAsString(),
+                    result.getAsJsonObject("data").get("location").getAsString());
             BrandDetailsActivity.initData(context, brand);
-            Log.e("pics", brand.getIcon());
             dialog.dismiss();
         }
     }

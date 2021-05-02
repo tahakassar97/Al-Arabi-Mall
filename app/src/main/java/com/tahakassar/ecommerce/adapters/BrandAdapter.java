@@ -54,19 +54,22 @@ public class BrandAdapter extends RecyclerView.Adapter<BrandAdapter.ViewHolder> 
         holder.titleTV.setText(brand.getTitle());
         holder.ratingBar.setRating(brand.getRating());
         holder.description.setText(brand.getDescription());
-        holder.address.setText("Al-Arabi Mall");
+        holder.address.setText(brand.getLocation());
         holder.number.setText(brand.getPhone());
         basicData.setRatingBarColor(holder.ratingBar);
-        Picasso.get().load(brand.getIcon())
-                .into(holder.logo);
-        Picasso.get().load(brand.getPics().get(0))
-                .into(holder.firstImage);
+        try {
+            Picasso.get().load(brand.getIcon())
+                    .into(holder.logo);
+            Picasso.get().load(brand.getPics().get(0))
+                    .into(holder.firstImage);
+        } catch (Exception e) {
+
+        }
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(context, BrandDetailsActivity.class);
             intent.putExtra("id", brand.getId());
             context.startActivity(intent);
         });
-
     }
 
     @Override

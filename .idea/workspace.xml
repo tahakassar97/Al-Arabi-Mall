@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="792dfaab-9b77-4b4b-92ef-86b207b1b919" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tahakassar/ecommerce/BrandDetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tahakassar/ecommerce/BrandDetailsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tahakassar/ecommerce/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tahakassar/ecommerce/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tahakassar/ecommerce/adapters/BrandAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tahakassar/ecommerce/adapters/BrandAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tahakassar/ecommerce/adapters/ViewPagerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tahakassar/ecommerce/adapters/ViewPagerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tahakassar/ecommerce/controllers/BrandDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tahakassar/ecommerce/controllers/BrandDetailsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tahakassar/ecommerce/controllers/RatingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tahakassar/ecommerce/controllers/RatingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tahakassar/ecommerce/models/Brand.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tahakassar/ecommerce/models/Brand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/brand_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/brand_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1rkjqssfZKnegoGS7m1gfcjYttj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../../../Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../TEC/the-institute-android" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="792dfaab-9b77-4b4b-92ef-86b207b1b919" name="Default Changelist" comment="" />
+      <created>1619527176166</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619527176166</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1619527244327">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1619527244327" />
+  </component>
+</project>

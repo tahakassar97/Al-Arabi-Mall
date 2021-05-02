@@ -99,9 +99,8 @@
 
             <TextView
                 android:id="@+id/address"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/mini_margin"
                 android:layout_marginTop="10dp"
                 android:text="@string/address"
                 android:textColor="@color/colorAccent"
@@ -111,12 +110,12 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_marginStart="40dp"
+                android:layout_marginStart="10dp"
                 android:src="@drawable/phone" />
 
             <TextView
                 android:id="@+id/number"
-                android:layout_width="wrap_content"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/mini_margin"
                 android:layout_marginTop="10dp"

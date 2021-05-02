@@ -130,9 +130,9 @@ public class HomeFragment extends Fragment {
                                         ArrayList<String> urls = new ArrayList<>();
                                         JsonArray pics = brands.get(i).getAsJsonObject()
                                                 .get("pics").getAsJsonArray();
+                                        Log.e("image", String.valueOf(pics.size()));
                                         for (int j = 0; j < pics.size(); j++) {
                                             urls.add(pics.get(i).toString());
-                                            Log.e("image", pics.get(i).toString());
                                         }
                                         Brand brand = new Brand(brands.get(i).getAsJsonObject()
                                                 .get("id").toString()
@@ -144,7 +144,8 @@ public class HomeFragment extends Fragment {
                                                 brands.get(i).getAsJsonObject().get("description").toString()
                                                         .replace("\"", ""),
                                                 brands.get(i).getAsJsonObject().get("phone").toString()
-                                                        .replace("\"", ""), urls
+                                                        .replace("\"", ""), urls,
+                                                brands.get(i).getAsJsonObject().get("location").toString()
                                         );
                                         brandsData.add(brand);
                                     }
@@ -242,6 +243,7 @@ public class HomeFragment extends Fragment {
                                             ArrayList<String> urls = new ArrayList<>();
                                             JsonArray pics = brands.get(i).getAsJsonObject()
                                                     .get("pics").getAsJsonArray();
+                                            Log.e("image", String.valueOf(pics.size()));
                                             for (int j = 0; j < pics.size(); j++) {
                                                 urls.add(pics.get(i).toString()
                                                         .replace("\"", ""));
@@ -258,7 +260,8 @@ public class HomeFragment extends Fragment {
                                                     brands.get(i).getAsJsonObject().get("description").toString()
                                                             .replace("\"", ""),
                                                     brands.get(i).getAsJsonObject().get("phone").toString()
-                                                            .replace("\"", ""), urls
+                                                            .replace("\"", ""), urls,
+                                                    brands.get(i).getAsJsonObject().get("location").toString()
                                             );
                                             brandsData.add(brand);
                                         }

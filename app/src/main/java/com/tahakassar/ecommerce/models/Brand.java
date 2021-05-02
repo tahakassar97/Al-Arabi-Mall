@@ -13,13 +13,13 @@ public class Brand implements Serializable {
     private String phone;
     private String lat;
     private String lng;
-
+    private String location;
     public Brand() {
     }
 
     public Brand(String id, String title, String icon, float rating,
                  ArrayList<String> pics, String description, String phone, String lat,
-                 String lng) {
+                 String lng, String location) {
         this.id = id;
         this.title = title;
         this.icon = icon;
@@ -29,6 +29,20 @@ public class Brand implements Serializable {
         this.phone = phone;
         this.lat = lat;
         this.lng = lng;
+        this.location = location;
+    }
+
+    public Brand(String id, String title, String icon,
+                 float rating, String description, String phone, ArrayList<String> pics,
+                 String location) {
+        this.id = id;
+        this.title = title;
+        this.icon = icon;
+        this.rating = rating;
+        this.pics = pics;
+        this.description = description;
+        this.phone = phone;
+        this.location = location;
     }
 
     public String getId() {
@@ -67,14 +81,8 @@ public class Brand implements Serializable {
         return lng;
     }
 
-    public Brand(String id, String title, String icon,
-                 float rating, String description, String phone, ArrayList<String> pics) {
-        this.id = id;
-        this.title = title;
-        this.icon = icon;
-        this.rating = rating;
-        this.pics = pics;
-        this.description = description;
-        this.phone = phone;
+    public String getLocation() {
+        return location;
     }
+
 }
